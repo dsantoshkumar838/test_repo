@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock Trading Simulation</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Stock Trading Simulation</h1>
+  </header>
+
+  <section id="trading-panel">
+    <h2>Buy/Sell Stocks</h2>
+    <div id="stock-info">
+      <p>Stock Symbol: <input type="text" id="symbol" placeholder="AAPL"></p>
+      <p>Quantity: <input type="number" id="quantity" value="1" min="1"></p>
+      <button id="buy-button">Buy</button>
+      <button id="sell-button">Sell</button>
+    </div>
+  </section>
+
+  <section id="portfolio">
+    <h2>Your Portfolio</h2>
+    <table id="portfolio-table">
+      <thead>
+        <tr>
+          <th>Stock</th>
+          <th>Quantity</th>
+          <th>Price</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Portfolio rows will be dynamically added here -->
+      </tbody>
+    </table>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
+
